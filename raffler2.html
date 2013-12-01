@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="IS 698 Homework 12 submitted by Umasankar Arumugam">    
+    <meta name="author" content="Dr. Gerald Canfield">
+    <meta name="robots" content="noindex, nofollow">
+    <title>IS 698 Fall 2013 - Homework 12 - Raffler with CoffeeScript</title>
+    <link rel="stylesheet" href="raffler.css" media="screen">
+    <link rel="stylesheet" href="toc.css" media="screen">
+</head>
+  <body>
+    <header id="header">
+      <h1>IS 698 Fall 2013: Homework 12 </h1>
+      <h2>Raffler Reset <sup>with CoffeeScript</sup></h2>
+      <h3>Submitted By: Umasankar Arumugam</h3>
+      <a href="index.html">&lsaquo; Table of Contents</a>
+    </header>
+    <section id="raffler">
+    </section>
+    <script type="text/template" id="item-template">
+        <div id="new">
+            <input id="new-name" size="30" autofocus>
+            <input type="submit" value="Add New Entry" id="newvalue"/>
+        </div>
+        <ul>
+          <% _.each(entries, function(entry){ %>
+                <li class="entry-name">
+                <button id='<%- entry.id %>'>Delete</button>
+                <%- entry.name %><span class="entry-winner">
+                <% if (entry.winner) { %>WINNER<% } %></span></li>
+          <% }); %>
+        </ul>
+        <div id="footer">
+            <input type="submit" id='choosewinner' value= "Draw Winner"/>
+            <input type="submit" id='resetWinners' value= "Reset Raffle"/>
+            <a href="raffler1.html" class="viewjson">View Raffler without Reset</a>
+        </div>        
+    </script> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js" type="text/javascript"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js" type="text/javascript"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.1.0/backbone.localStorage-min.js"></script>
+    <script src="raffler2.js"></script>
+  </body>
+</html>

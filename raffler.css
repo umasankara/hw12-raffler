@@ -1,0 +1,85 @@
+@CHARSET "UTF-8";
+
+body {
+  font-family: "Lucida Grande", Lucida, Helvetica, Arial, sans-serif;
+  background: #FFF;
+  color: #333;
+  margin: 0px;
+  padding: 0px;
+}
+
+#header {
+  background: #C97E41;
+  margin: 0px;
+  padding: 20px;
+}
+#header h1 {
+  font-family: Inconsolata, Monaco, Courier, mono;
+  color: #FFF;
+  margin: 0px;
+  text-align: center;
+}
+
+#winners{
+  width: 500px;
+  margin: 0 auto;
+}
+
+ul li {margin: 0}
+
+.entry-name {
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: dashed 1px;
+  width: 500px;
+  margin: 0 auto;
+  list-style-type: none;
+}
+.entry-winner {
+  float:right;
+  font-size: 14px;
+  color: red;
+}
+
+.entry-delete {
+  font-style: italic;
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+#chooser {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#footer {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-left: 40px;
+}
+
+#new {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.delete {
+  margin-left: 25px;
+}
+
+.viewjson {
+    color: #0098B9;
+    display: block;
+    float: right;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 0 3px 29px;
+    text-decoration: none;
+}
+
+a:hover { color: #ff4e00; }
+
+em {font-size: 10px; line-height: 9px; color: #999;}
